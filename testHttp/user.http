@@ -1,0 +1,31 @@
+@baseUrl = http://localhost:3000/api/
+
+
+### Obtener Lista de usuarios
+GET {{baseUrl}}user
+
+### Obtener un usuario por Id
+GET {{baseUrl}}user/60fa56f537701d81507ece02
+
+### Crear Usuario
+POST  {{baseUrl}}user
+Content-Type: application/json
+
+{
+    "name":"Pedro",    
+    "password": "123344567",
+    "email": "juan3434@gmail.com",
+    "companyName": "Patriarc878as3.com"
+}
+
+###Actualiza usuario
+PUT {{baseUrl}}user/60fa56c773852867188d78ab
+Content-Type: application/json
+
+{
+    "name":"jhon",       
+    "email": "jhon.castrillon@gmail.com"
+}
+
+### Eliminar Usuario
+DELETE {{baseUrl}}user/60fa56c773852867188d78ab

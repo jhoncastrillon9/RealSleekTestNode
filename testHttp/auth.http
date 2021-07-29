@@ -1,0 +1,21 @@
+@baseUrl = http://localhost:3000/api/
+
+### Autenticarse
+POST  {{baseUrl}}auth/signin
+Content-Type: application/json
+
+{
+   "password": "1234",
+    "email": "preubaproducto@gmail.com"
+}
+
+###Registrase
+POST {{baseUrl}}auth/signup
+Content-Type: application/json
+
+{
+    "name":"Prueba Producto",    
+    "password": "1234",
+    "email": "preubaprodu@gmail.com",
+    "companyName": "Real products8"
+}

@@ -1,0 +1,38 @@
+@baseUrl = http://localhost:3000/api/
+
+### Obtener Lista de productos
+GET {{baseUrl}}product
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMDIwMzk5ODJmMzlmYWVmNDgyNWQ0MyIsIm5hbWUiOiJQcnVlYmEgUHJvZHVjdG8iLCJlbWFpbCI6InByZXViYXByb2R1QGdtYWlsLmNvbSIsImlhdCI6MTYyNzUyMTk0NSwiZXhwIjoxNjI3NjA4MzQ1fQ.sKebGN49aGNnr2pb7bzCmXQKRBDogNnxRdotL-YfmT0
+
+### Obtener un product por Id
+GET {{baseUrl}}product/610203b282f39faef4825d4e
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMDIwMzk5ODJmMzlmYWVmNDgyNWQ0MyIsIm5hbWUiOiJQcnVlYmEgUHJvZHVjdG8iLCJlbWFpbCI6InByZXViYXByb2R1QGdtYWlsLmNvbSIsImlhdCI6MTYyNzUyMTk0NSwiZXhwIjoxNjI3NjA4MzQ1fQ.sKebGN49aGNnr2pb7bzCmXQKRBDogNnxRdotL-YfmT0
+
+
+### Crear Producto
+POST  {{baseUrl}}product
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMDIwMzk5ODJmMzlmYWVmNDgyNWQ0MyIsIm5hbWUiOiJQcnVlYmEgUHJvZHVjdG8iLCJlbWFpbCI6InByZXViYXByb2R1QGdtYWlsLmNvbSIsImlhdCI6MTYyNzUyMTk0NSwiZXhwIjoxNjI3NjA4MzQ1fQ.sKebGN49aGNnr2pb7bzCmXQKRBDogNnxRdotL-YfmT0
+Content-Type: application/json
+
+{
+    "productName":"Teja",    
+    "category": "Ferreteria",
+    "price": 1212,
+    "urlImg": "https://exitocol.vtexassets.com/arquivos/ids/5735435-1200-auto?width=1200&height=auto&aspect=true"
+}
+
+###Actualiza producto
+PUT {{baseUrl}}product/610203b282f39faef4825d4e
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMDIwMzk5ODJmMzlmYWVmNDgyNWQ0MyIsIm5hbWUiOiJQcnVlYmEgUHJvZHVjdG8iLCJlbWFpbCI6InByZXViYXByb2R1QGdtYWlsLmNvbSIsImlhdCI6MTYyNzUyMTk0NSwiZXhwIjoxNjI3NjA4MzQ1fQ.sKebGN49aGNnr2pb7bzCmXQKRBDogNnxRdotL-YfmT0
+Content-Type: application/json
+
+{
+    "productName":"Helado",    
+    "category": "Colchones",
+    "price": 3434,
+    "urlImg": "https://exitocol.vtexassets.com/arquivos/ids/5735435-1200-auto?width=1200&height=auto&aspect=true"
+}
+
+### Eliminar producto
+DELETE {{baseUrl}}product/610203b282f39faef4825d4e
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMDIwMzk5ODJmMzlmYWVmNDgyNWQ0MyIsIm5hbWUiOiJQcnVlYmEgUHJvZHVjdG8iLCJlbWFpbCI6InByZXViYXByb2R1QGdtYWlsLmNvbSIsImlhdCI6MTYyNzUyMTk0NSwiZXhwIjoxNjI3NjA4MzQ1fQ.sKebGN49aGNnr2pb7bzCmXQKRBDogNnxRdotL-YfmT0
